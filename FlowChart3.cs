@@ -12,18 +12,15 @@ namespace FlowChart
             int y = int.Parse(Console.ReadLine());
             int z = int.Parse(Console.ReadLine());
 
-            for (int i = 0; x > 0 && y >0; i++)
+            for (int i = 0; x > 0 && y > 0; i++)
             {
                 x = x - 1;
                 y = y - 1;
-                Console.Write('C');
+                Console.Write("C");
             }
-            if (x > 0)
+            if (x > 0 && y <= 0)
             {
-                if (y <= 0) 
-                {
-                    Console.Write("D");
-                }
+                Console.Write("D");
                 if (z > 0)
                 {
                     Console.Write("");
