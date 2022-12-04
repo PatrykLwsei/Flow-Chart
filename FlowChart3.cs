@@ -18,16 +18,19 @@ namespace FlowChart
                 y = y - 1;
                 Console.Write("C");
             }
-            if (x > 0 && y <= 0)
+            if (x > 0)
             {
-                Console.Write("D");
-                if (z > 0)
+                if (y <= 0)
                 {
-                    Console.Write("");
-                }
-                else
-                {
-                    Console.Write('G');
+                    Console.Write("D");
+                    if (z > 0)
+                    {
+                        Console.Write("");
+                    }
+                    else
+                    {
+                        Console.Write('G');
+                    }
                 }
             }
             else
